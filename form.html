@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>申請フォーム</title>
+</head>
+<body>
+申請フォーム<br>
+    <form method="post" action="add.php">
+        名前：<input type="text" name="name" required><br>
+        場所：
+        <select name="category">
+            <option value="">選択してください</option>
+            <option value="1">東京</option>
+            <option value="2">神奈川</option>
+            <option value="3">埼玉</option>
+        </select><br>
+        区分：
+        <input type="radio" name="division" value="1">S
+        <input type="radio" name="division" value="2" checked>A
+        <input type="radio" name="division" value="3">B
+        <br>
+        給与：
+        <input type="number" min="1" max="1000000" name="salary">円
+        <br>
+        備考：
+        <textarea name="biko" cols="40" rows="5" maxlength="1000"></textarea>
+        <br>
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
